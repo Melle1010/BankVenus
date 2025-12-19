@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login/login.css">
     <title>Login Screen</title>
 </head>
 <body>
-    <h2>Login Screen</h2>    
+    <div id="containerLogin">
+    <img id="venusLogo"  src="./assets/images/VenusLogo.png" alt="Logo image of the planet Venus">
+    <h1 id="welcomeMessage">Bank Venus</h1>
+    <form id="loginForm" action="/login" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit" id="loginButton">Login</button>
+    </form>
+    <br>
+    <label for="createAccount" id="createAccountLabel">Don't have an account?</label>
+    <button id="createAccount" onclick="window.location.href='createAccount.html'">Create Account</button>
+    </div>
+
+    <footer>
+        <a href="" target="_blank">Support</a>
+        <a href="" target="_blank">Privacy Policy</a>
+        <a href="" target="_blank">Terms of Service</a>
+        <p>&copy; 2024 Bank Venus. All rights reserved.</p>
+    </footer>
 </body>
 </html>

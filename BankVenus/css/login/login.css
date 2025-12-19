@@ -1,18 +1,74 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../../assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'Bebas Neue', sans-serif;
+}
 #venusLogo{
     height: 180px;
 }
-#container{
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
-    background-color: dodgerblue;
-}
-.container div {
-    background-color: #f1f1f1;
-    border: 1px solid black;
-    padding: 10px;
-    font-size: 30px;
+#containerLogin{
+    padding-top: 4em;
     text-align: center;
 }
-body{
-    /* background-color: rgb(6, 2, 23); */
+label, input{
+    margin: 10px;
+}
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+}
+label{
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+#createAccountLabel{
+    font-size: 14px;
+}
+#createAccountLabel, #createAccount{
+    margin-top: 50px;
+}
+#loginButton{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-top: 20px;
+}
+button{
+    cursor: pointer;
+    border-radius: 8px;
+    border-color: #4d4b4b;
+}
+button:hover{
+    background-color: #3d2a06;
+    color: white;
+}
+footer {
+    background-color: rgb(205, 182, 154);
+    margin-top: 200px;
+    color: #666;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+a {
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover {
+    color: #3d2a06;
+    text-decoration: none;
 }
