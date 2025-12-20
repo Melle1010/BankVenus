@@ -4,31 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/login/login.css">
-    <title>Login Screen</title>
+    <title>Login Screen | Bank Venus</title>
 </head>
 <body>
-    <div id="containerLogin">
-    <img id="venusLogo"  src="./assets/images/VenusLogo.png" alt="Logo image of the planet Venus">
-    <h1 id="welcomeMessage">Bank Venus</h1>
-    <form id="loginForm" action="/login" method="POST">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br>
-        <button type="submit" id="loginButton">Login</button>
-    </form>
-    <br>
-    <label for="createAccount" id="createAccountLabel">Don't have an account?</label>
-    <button id="createAccount" onclick="window.location.href='createAccount.html'">Create Account</button>
-    </div>
+    <main id="containerLogin">
+        <div class="login-card">
+            <img id="venusLogo" src="./assets/images/VenusLogo.png" alt="Venus Logo">
+            <h1 id="welcomeMessage">Bank Venus</h1>
+            
+            <form id="loginForm" action="/login" method="POST">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                
+                <button type="submit" id="loginButton">Sign In</button>
+            </form>
+
+            <div class="account-actions">
+                <p id="createAccountLabel">Don't have an account?</p>
+                <button id="createAccount" onclick="window.location.href='createAccount.html'">Create Account</button>
+            </div>
+        </div>
+    </main>
 
     <footer>
-        <a href="" target="_blank">Support</a>
-        <a href="" target="_blank">Privacy Policy</a>
-        <a href="" target="_blank">Terms of Service</a>
-        <p>&copy; 2024 Bank Venus. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Support</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <p>&copy; 2025 Bank Venus. All rights reserved.</p>
     </footer>
 </body>
 </html>

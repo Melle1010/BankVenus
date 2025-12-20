@@ -5,70 +5,106 @@
   font-style: normal;
 }
 body {
-  font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(238, 238, 238);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-#venusLogo{
-    height: 180px;
+#containerLogin {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
-#containerLogin{
-    padding-top: 4em;
+.login-card {
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
     text-align: center;
 }
-label, input{
-    margin: 10px;
+#venusLogo {
+    height: 130px;
+    margin-bottom: 10px;
 }
-h1{
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 55px;
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 42px;
+    margin-bottom: 30px;
+    color: #333;
 }
-label{
-    font-size: 18px;
-    font-family: Arial, sans-serif;
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
 }
-#createAccountLabel{
+label {
+    display: block;
     font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
 }
-#createAccountLabel, #createAccount{
-    margin-top: 50px;
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s;
 }
-#loginButton{
-    font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 120px;
-    padding-right: 120px;
-    margin-top: 20px;
+input:focus {
+    outline: none;
+    border-color: #3d2a06;
 }
-button{
+#loginButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #3d2a06;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    border-radius: 8px;
-    border-color: #4d4b4b;
+    transition: transform 0.1s, background-color 0.3s;
 }
-button:hover{
+#loginButton:hover {
+    background-color: #5a3e09;
+}
+#loginButton:active {
+    transform: scale(0.98);
+}
+.account-actions {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+#createAccount {
+    background: none;
+    border: 1px solid #3d2a06;
+    color: #3d2a06;
+    padding: 8px 20px;
+    font-weight: bold;
+}
+#createAccount:hover {
     background-color: #3d2a06;
     color: white;
 }
 footer {
-    background-color: rgb(205, 182, 154);
-    margin-top: 200px;
-    color: #666;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 12px;
 }
-a {
-    color: black;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+.footer-links {
+    margin-bottom: 10px;
 }
-a:hover {
-    color: #3d2a06;
+.footer-links a {
     text-decoration: none;
+    margin: 0 10px;
+    color: #777;
 }
