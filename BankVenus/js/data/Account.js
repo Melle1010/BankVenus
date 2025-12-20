@@ -3,32 +3,43 @@ class Account{
     #owner;
     #transactions;
 
-    constructor(balance, owner, transactions){
+    constructor(balance, owner, transactions = []){
         this.#balance = balance;
         this.#owner = owner;
         this.#transactions = transactions;
     }
+    constructor(owner){
+        this.#balance = 0;
+        this.#owner = owner;
+        this.#transactions = [];
+    }
 
     // Get
-    getOwner(){
+    get owner(){
         return this.#owner;
     }
-    getBalance(){
+    get balance(){
         return this.#balance;
     }
-    getTransactions(){
+    get transactions(){
         return this.#transactions;
     }
 
     // Set
-    setOwner(owner){
+    set owner(owner){
         this.#owner = owner;
     }
-    setBalance(balance){
+    set balance(balance){
         this.#balance = balance;
     }
-    setTransactions(transactions){
+    set transactions(transactions){
         this.#transactions = transactions;
+    }
+
+    // Methods
+    addTransaction(transaction){
+        this.#transactions.push(transaction);
+        this.#balance += transaction.amount;
     }
 
 }
