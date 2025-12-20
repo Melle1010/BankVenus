@@ -6,8 +6,8 @@ function logIn(bank, username, password){
     // }
     // return 0;
 
-    let user = bank.users.find(user => user.username === username);
-    if(user.password === password){
+    let user = bank.users.find(user => user.username == username);
+    if(user.password == password){
         return user;
     }else {
         return 0;
