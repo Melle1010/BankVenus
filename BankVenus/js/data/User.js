@@ -1,9 +1,11 @@
 class User{
+    #id
     #name;
     #accounts;
     #password;
 
-    constructor(name, accounts, password){
+    constructor(id, name, accounts, password){
+        this.#id = id;
         this.#name = name;
         this.#accounts = accounts;
         this.#password = password;
@@ -26,10 +28,5 @@ class User{
     }
     set accounts(accounts){
         this.#accounts = accounts;
-    }
-
-    // Methods
-    addAccount(account){
-        this.#accounts.push(account);
     }
 }

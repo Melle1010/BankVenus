@@ -2,18 +2,14 @@ class Bank{
     #users;
     
     // Get
-    getUsers(){
+    get users(){
         return this.#users;
     }
 
     // Set
-    setUsers(users){
+    set users(users){
         this.#users = users;
     }
 
-    // Methods
-    addUser(user){
-        this.#users.push(user);
-    }
     
 }

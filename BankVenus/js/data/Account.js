@@ -36,10 +36,4 @@ class Account{
         this.#transactions = transactions;
     }
 
-    // Methods
-    addTransaction(transaction){
-        this.#transactions.push(transaction);
-        this.#balance += transaction.amount;
-    }
-
 }

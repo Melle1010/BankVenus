@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/login/login.css">
+    <link rel="stylesheet" href="../css/login.css">
     <title>Login Screen | Bank Venus</title>
 </head>
 <body>
     <main id="containerLogin">
         <div class="login-card">
-            <img id="venusLogo" src="./assets/images/VenusLogo.png" alt="Venus Logo">
+            <img id="venusLogo" src="../assets/images/VenusLogo.png" alt="Venus Logo">
             <h1 id="welcomeMessage">Bank Venus</h1>
             
             <form id="loginForm" action="/login" method="POST">
@@ -26,10 +26,7 @@
                 <button type="submit" id="loginButton">Sign In</button>
             </form>
 
-            <div class="account-actions">
-                <p id="createAccountLabel">Don't have an account?</p>
-                <button id="createAccount" onclick="window.location.href='createAccount.html'">Create Account</button>
-            </div>
+            
         </div>
     </main>
 
