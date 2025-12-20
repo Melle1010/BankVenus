@@ -1,25 +1,35 @@
 class User{
     #name;
     #accounts;
+    #password;
 
-    constructor(name, accounts){
+    constructor(name, accounts, password){
         this.#name = name;
         this.#accounts = accounts;
+        this.#password = password;
     }
 
     // Get
-    getName(){
+    get name(){
         return this.#name;
     }
-    getAccounts(){
+    get accounts(){
         return this.#accounts;
+    }
+    get password(){
+        return this.#password;
     }
 
     // Set
-    setName(name){
+    set name(name){
         this.#name = name;
     }
-    setAccounts(accounts){
+    set accounts(accounts){
         this.#accounts = accounts;
+    }
+
+    // Methods
+    addAccount(account){
+        this.#accounts.push(account);
     }
 }
